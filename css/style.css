@@ -1,0 +1,81 @@
+/* All Common CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,ol {
+         list-style-type: none;
+}
+a { 
+    text-decoration: none;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+/* All Common CSS End */
+
+/* Header Part Start */
+.header{
+    padding: 40px 0;
+    background: teal;
+}
+.menu ul{ display: flex;
+    justify-content: center;
+}
+.menu ul li a{
+    padding: 0 15px;
+    color: white;
+    text-transform: uppercase;
+    transition: all linear 0.4s;
+    font-family: "Google Sans", sans-serif;
+    font-weight: bold;
+}
+.menu ul li a:hover{
+    color: blue;
+}
+/* Header Part End */
+
+/* Banner Part Start */
+.banner{
+    background: url(../images/Jeep.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.overly{
+    padding: 400px 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    
+}
+.overly h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    display: inline-block;
+    position: relative;
+    
+}
+.overly h1::before {
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    background: rgb(18, 214, 0);
+    content: "";
+    bottom: 0;
+    left: 0;
+}
+.overly h1::after {
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    background: rgb(18, 214, 0);
+    content: "";
+    right: 0;
+    top: 0;
+}
+
+/* Banner Part End */
